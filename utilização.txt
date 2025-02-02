@@ -1,0 +1,5 @@
+pip install openpyxl
+pip install plotly
+pip install sentence-transformers
+pip install -r requeriments.txt
+streamlit run processador_ofx.py
