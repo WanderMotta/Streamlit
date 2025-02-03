@@ -1,0 +1,6 @@
+streamlit
+pandas
+ofxparse
+openpyxl
+plotly
+sentence-transformers
