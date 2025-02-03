@@ -1,0 +1,609 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20250130120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>5709-6</BRANCHID>
+               <ACCTID>108538-7</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20240430120000[-3:BRT]</DTSTART>
+               <DTEND>20240531120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240502120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>8065.86</TRNAMT>
+                  <FITID>2024050208065860</FITID>
+                  <CHECKNUM>000000921441</CHECKNUM>
+                  <REFNUM>921.441</REFNUM>
+                  <MEMO>Recebimento de Proventos - Data balanc.: 02/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240502120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-143.57</TRNAMT>
+                  <FITID>202405021143570</FITID>
+                  <CHECKNUM>000511058901</CHECKNUM>
+                  <REFNUM>511.058.901</REFNUM>
+                  <MEMO>Cobrança de Juros - Data balanc.: 02/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240502120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-42.02</TRNAMT>
+                  <FITID>20240502142020</FITID>
+                  <CHECKNUM>000391100701</CHECKNUM>
+                  <REFNUM>391.100.701</REFNUM>
+                  <MEMO>Cobrança de I.O.F. - Data balanc.: 02/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240503120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>500.00</TRNAMT>
+                  <FITID>202405030500000</FITID>
+                  <CHECKNUM>109030421072</CHECKNUM>
+                  <REFNUM>31.109.030.421.072</REFNUM>
+                  <MEMO>Pix - Recebido - Data balanc.: 03/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240503120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-220.00</TRNAMT>
+                  <FITID>202405031220000</FITID>
+                  <CHECKNUM>000000050301</CHECKNUM>
+                  <REFNUM>50.301</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 03/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240503120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2500.00</TRNAMT>
+                  <FITID>2024050312500000</FITID>
+                  <CHECKNUM>000000050302</CHECKNUM>
+                  <REFNUM>50.302</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 03/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240503120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-211.34</TRNAMT>
+                  <FITID>202405031211340</FITID>
+                  <CHECKNUM>000000050303</CHECKNUM>
+                  <REFNUM>50.303</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 03/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240503120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-284.57</TRNAMT>
+                  <FITID>202405031284570</FITID>
+                  <CHECKNUM>000000050304</CHECKNUM>
+                  <REFNUM>50.304</REFNUM>
+                  <MEMO>Pagamento de Impostos - Data balanc.: 03/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240503120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-400.00</TRNAMT>
+                  <FITID>202405031400000</FITID>
+                  <CHECKNUM>000000050305</CHECKNUM>
+                  <REFNUM>50.305</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 03/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240506120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-7.75</TRNAMT>
+                  <FITID>2024050617750</FITID>
+                  <CHECKNUM>000000129577</CHECKNUM>
+                  <REFNUM>129.577</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 06/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240506120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.61</TRNAMT>
+                  <FITID>2024050615610</FITID>
+                  <CHECKNUM>000000259222</CHECKNUM>
+                  <REFNUM>259.222</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 06/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240508120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-7.17</TRNAMT>
+                  <FITID>2024050817170</FITID>
+                  <CHECKNUM>000000164712</CHECKNUM>
+                  <REFNUM>164.712</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 08/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240508120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1438.22</TRNAMT>
+                  <FITID>2024050811438220</FITID>
+                  <CHECKNUM>000000050801</CHECKNUM>
+                  <REFNUM>50.801</REFNUM>
+                  <MEMO>Pagamento de Boleto - Data balanc.: 08/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240510120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-300.00</TRNAMT>
+                  <FITID>202405101300000</FITID>
+                  <CHECKNUM>000000051001</CHECKNUM>
+                  <REFNUM>51.001</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 10/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240510120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8779.42</TRNAMT>
+                  <FITID>2024051018779420</FITID>
+                  <CHECKNUM>000136608649</CHECKNUM>
+                  <REFNUM>136.608.649</REFNUM>
+                  <MEMO>Pagto cartão crédito - Data balanc.: 10/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240510120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.55</TRNAMT>
+                  <FITID>20240510114550</FITID>
+                  <CHECKNUM>311100841250</CHECKNUM>
+                  <REFNUM>841.311.100.841.250</REFNUM>
+                  <MEMO>Tarifa Pacote de Serviços - Data balanc.: 10/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240513120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>6604.00</TRNAMT>
+                  <FITID>2024051306604000</FITID>
+                  <CHECKNUM>996568535741</CHECKNUM>
+                  <REFNUM>155.996.568.535.741</REFNUM>
+                  <MEMO>Pix - Recebido - Data balanc.: 13/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240513120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-185.91</TRNAMT>
+                  <FITID>202405131185910</FITID>
+                  <CHECKNUM>000000051301</CHECKNUM>
+                  <REFNUM>51.301</REFNUM>
+                  <MEMO>Pagamento de Boleto - Data balanc.: 13/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240513120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202405131100000</FITID>
+                  <CHECKNUM>000000051302</CHECKNUM>
+                  <REFNUM>51.302</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 13/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240513120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-330.00</TRNAMT>
+                  <FITID>202405131330000</FITID>
+                  <CHECKNUM>000000040924</CHECKNUM>
+                  <REFNUM>40.924</REFNUM>
+                  <MEMO>Vivo Celular - Data balanc.: 13/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240515120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2989.24</TRNAMT>
+                  <FITID>2024051512989240</FITID>
+                  <CHECKNUM>000000051501</CHECKNUM>
+                  <REFNUM>51.501</REFNUM>
+                  <MEMO>Pagamento de Boleto - Data balanc.: 15/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240515120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-366.70</TRNAMT>
+                  <FITID>202405151366700</FITID>
+                  <CHECKNUM>000000011806</CHECKNUM>
+                  <REFNUM>11.806</REFNUM>
+                  <MEMO>Pagamento Pedágio - Data balanc.: 15/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240517120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>4461.78</TRNAMT>
+                  <FITID>2024051704461780</FITID>
+                  <CHECKNUM>467334246671</CHECKNUM>
+                  <REFNUM>159.467.334.246.671</REFNUM>
+                  <MEMO>Pix - Recebido - Data balanc.: 17/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240517120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-114.90</TRNAMT>
+                  <FITID>202405171114900</FITID>
+                  <CHECKNUM>000000051701</CHECKNUM>
+                  <REFNUM>51.701</REFNUM>
+                  <MEMO>Pagamento de Boleto - Data balanc.: 17/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>2500.00</TRNAMT>
+                  <FITID>2024052002500000</FITID>
+                  <CHECKNUM>198226217391</CHECKNUM>
+                  <REFNUM>162.198.226.217.391</REFNUM>
+                  <MEMO>Pix - Recebido - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.97</TRNAMT>
+                  <FITID>20240520114970</FITID>
+                  <CHECKNUM>000000153862</CHECKNUM>
+                  <REFNUM>153.862</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-60.00</TRNAMT>
+                  <FITID>20240520160000</FITID>
+                  <CHECKNUM>000000170423</CHECKNUM>
+                  <REFNUM>170.423</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202405201100000</FITID>
+                  <CHECKNUM>000000270675</CHECKNUM>
+                  <REFNUM>270.675</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-46.00</TRNAMT>
+                  <FITID>20240520146000</FITID>
+                  <CHECKNUM>000000371117</CHECKNUM>
+                  <REFNUM>371.117</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-12.00</TRNAMT>
+                  <FITID>20240520112000</FITID>
+                  <CHECKNUM>000000635833</CHECKNUM>
+                  <REFNUM>635.833</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.20</TRNAMT>
+                  <FITID>20240520110200</FITID>
+                  <CHECKNUM>000000736575</CHECKNUM>
+                  <REFNUM>736.575</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-84.89</TRNAMT>
+                  <FITID>20240520184890</FITID>
+                  <CHECKNUM>000000853220</CHECKNUM>
+                  <REFNUM>853.220</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1000.00</TRNAMT>
+                  <FITID>2024052011000000</FITID>
+                  <CHECKNUM>000000052001</CHECKNUM>
+                  <REFNUM>52.001</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-150.00</TRNAMT>
+                  <FITID>202405201150000</FITID>
+                  <CHECKNUM>000000052002</CHECKNUM>
+                  <REFNUM>52.002</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202405201100001</FITID>
+                  <CHECKNUM>000000052003</CHECKNUM>
+                  <REFNUM>52.003</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-439.80</TRNAMT>
+                  <FITID>202405201439800</FITID>
+                  <CHECKNUM>000000042079</CHECKNUM>
+                  <REFNUM>42.079</REFNUM>
+                  <MEMO>Pagto Tributo Municipal - Data balanc.: 20/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240521120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-18.00</TRNAMT>
+                  <FITID>20240521118000</FITID>
+                  <CHECKNUM>000000156703</CHECKNUM>
+                  <REFNUM>156.703</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 21/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240521120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-739.56</TRNAMT>
+                  <FITID>202405211739560</FITID>
+                  <CHECKNUM>000000052101</CHECKNUM>
+                  <REFNUM>52.101</REFNUM>
+                  <MEMO>Pagamento de Boleto - Data balanc.: 21/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240522120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.00</TRNAMT>
+                  <FITID>20240522110000</FITID>
+                  <CHECKNUM>000000164875</CHECKNUM>
+                  <REFNUM>164.875</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 22/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240522120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202405221100000</FITID>
+                  <CHECKNUM>000000052201</CHECKNUM>
+                  <REFNUM>52.201</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 22/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240522120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202405221100001</FITID>
+                  <CHECKNUM>000000052202</CHECKNUM>
+                  <REFNUM>52.202</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 22/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240522120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-640.87</TRNAMT>
+                  <FITID>202405221640870</FITID>
+                  <CHECKNUM>000000043956</CHECKNUM>
+                  <REFNUM>43.956</REFNUM>
+                  <MEMO>Pagamento Fatura de Água - Data balanc.: 22/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-24.20</TRNAMT>
+                  <FITID>20240523124200</FITID>
+                  <CHECKNUM>000000132651</CHECKNUM>
+                  <REFNUM>132.651</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 23/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.00</TRNAMT>
+                  <FITID>20240523111000</FITID>
+                  <CHECKNUM>000000257858</CHECKNUM>
+                  <REFNUM>257.858</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 23/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-300.00</TRNAMT>
+                  <FITID>202405231300000</FITID>
+                  <CHECKNUM>000000052301</CHECKNUM>
+                  <REFNUM>52.301</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 23/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240524120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-500.00</TRNAMT>
+                  <FITID>202405241500000</FITID>
+                  <CHECKNUM>000000052401</CHECKNUM>
+                  <REFNUM>52.401</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 24/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>866.99</TRNAMT>
+                  <FITID>202405270866990</FITID>
+                  <CHECKNUM>220947883601</CHECKNUM>
+                  <REFNUM>168.220.947.883.601</REFNUM>
+                  <MEMO>Pix - Recebido - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-29.70</TRNAMT>
+                  <FITID>20240527129700</FITID>
+                  <CHECKNUM>000000140053</CHECKNUM>
+                  <REFNUM>140.053</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.00</TRNAMT>
+                  <FITID>20240527110000</FITID>
+                  <CHECKNUM>000000144564</CHECKNUM>
+                  <REFNUM>144.564</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-103.40</TRNAMT>
+                  <FITID>202405271103400</FITID>
+                  <CHECKNUM>000000240171</CHECKNUM>
+                  <REFNUM>240.171</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.00</TRNAMT>
+                  <FITID>20240527132000</FITID>
+                  <CHECKNUM>000000343422</CHECKNUM>
+                  <REFNUM>343.422</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.96</TRNAMT>
+                  <FITID>20240527120960</FITID>
+                  <CHECKNUM>000000643591</CHECKNUM>
+                  <REFNUM>643.591</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.50</TRNAMT>
+                  <FITID>20240527115500</FITID>
+                  <CHECKNUM>000000743734</CHECKNUM>
+                  <REFNUM>743.734</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-27.95</TRNAMT>
+                  <FITID>20240527127950</FITID>
+                  <CHECKNUM>000000843800</CHECKNUM>
+                  <REFNUM>843.800</REFNUM>
+                  <MEMO>Compra com Cartão - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240527120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2024052715000</FITID>
+                  <CHECKNUM>000996947374</CHECKNUM>
+                  <REFNUM>996.947.374</REFNUM>
+                  <MEMO>Tarifa MSG - Mês Anterior - Data balanc.: 27/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240528120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-61.92</TRNAMT>
+                  <FITID>20240528161920</FITID>
+                  <CHECKNUM>000000044561</CHECKNUM>
+                  <REFNUM>44.561</REFNUM>
+                  <MEMO>Pagamento Fatura de Gás - Data balanc.: 28/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-50.00</TRNAMT>
+                  <FITID>20240531150000</FITID>
+                  <CHECKNUM>414600549200</CHECKNUM>
+                  <REFNUM>3.414.600.549.200</REFNUM>
+                  <MEMO>Banco 24 Horas - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-150.00</TRNAMT>
+                  <FITID>202405311150000</FITID>
+                  <CHECKNUM>414600594700</CHECKNUM>
+                  <REFNUM>3.414.600.594.700</REFNUM>
+                  <MEMO>Banco 24 Horas - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202405311100000</FITID>
+                  <CHECKNUM>855900792100</CHECKNUM>
+                  <REFNUM>5.855.900.792.100</REFNUM>
+                  <MEMO>Banco 24 Horas - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-300.00</TRNAMT>
+                  <FITID>202405311300000</FITID>
+                  <CHECKNUM>000000053101</CHECKNUM>
+                  <REFNUM>53.101</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-500.00</TRNAMT>
+                  <FITID>202405311500000</FITID>
+                  <CHECKNUM>000000053102</CHECKNUM>
+                  <REFNUM>53.102</REFNUM>
+                  <MEMO>Pix - Enviado - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-586.18</TRNAMT>
+                  <FITID>202405311586180</FITID>
+                  <CHECKNUM>000000010243</CHECKNUM>
+                  <REFNUM>10.243</REFNUM>
+                  <MEMO>Pagto Energia Elétrica - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240531120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-223.39</TRNAMT>
+                  <FITID>202405311223390</FITID>
+                  <CHECKNUM>000000046081</CHECKNUM>
+                  <REFNUM>46.081</REFNUM>
+                  <MEMO>Pagto Mensalidade Seguro - Data balanc.: 31/05/2024</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>140.88</BALAMT>
+               <DTASOF>20240531120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

@@ -1,0 +1,5 @@
+git init
+git add processador_ofx.py requirements.txt
+git commit -m "Adicionado exportação para SQL e melhorias na interface"
+git remote add origin https://github.com/WanderMotta/Streamlit.git
+git push -u origin master

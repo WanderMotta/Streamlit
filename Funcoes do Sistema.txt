@@ -1,0 +1,40 @@
+Aqui está um resumo simples das principais bibliotecas e funções do processador_ofx.py:
+
+Bibliotecas Principais:
+streamlit: Interface gráfica web
+pandas: Manipulação de dados em tabelas
+plotly: Gráficos interativos
+ofxparse: Leitura de arquivos OFX (extratos bancários)
+difflib: Comparação de textos (usado na categorização)
+
+Funções Principais:
+Carregamento de Dados:
+load_categorias(): Carrega categorias do arquivo Excel
+read_ofx_files(): Lê arquivos OFX do diretório
+
+Processamento:
+categorize_transaction(): Categoriza transações usando palavras-chave
+normalize_text(): Padroniza textos para comparação
+process_keywords(): Processa palavras-chave das categorias
+
+Interface:
+main(): Função principal que cria a interface
+filter_transactions(): Filtra transações por texto/valor
+formatar_valor(): Formata valores monetários
+
+Visualização:
+Gráficos de pizza para distribuição de gastos
+Gráficos de barras para evolução temporal
+Métricas de receitas, despesas e saldo
+
+Gerenciamento:
+Gestão de categorias (adicionar/editar)
+Upload de arquivo Excel com categorias
+Modo debug para diagnóstico
+
+O sistema basicamente:
+
+Lê extratos bancários (OFX)
+Categoriza automaticamente as transações
+Mostra gráficos e análises
+Permite busca e filtros nas transações

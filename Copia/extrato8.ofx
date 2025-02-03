@@ -1,0 +1,672 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20250130120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>5709-6</BRANCHID>
+               <ACCTID>108538-7</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20240730120000[-3:BRT]</DTSTART>
+               <DTEND>20240831120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240801120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>7421.08</TRNAMT>
+                  <FITID>2024080107421080</FITID>
+                  <CHECKNUM>000000735181</CHECKNUM>
+                  <REFNUM>735.181</REFNUM>
+                  <MEMO>Recebimento de Proventos - COMANDO DO EXERCITO-CENTRO DE PAGAM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240802120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-250.00</TRNAMT>
+                  <FITID>202408021250000</FITID>
+                  <CHECKNUM>000000080201</CHECKNUM>
+                  <REFNUM>80.201</REFNUM>
+                  <MEMO>Pix - Enviado - 02/08 10:08 SILVIA REGINA DESTEFANO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240802120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2500.00</TRNAMT>
+                  <FITID>2024080212500000</FITID>
+                  <CHECKNUM>000000080202</CHECKNUM>
+                  <REFNUM>80.202</REFNUM>
+                  <MEMO>Pix - Enviado - 02/08 10:09 MARIA LUCIA RAMOS SIQUEIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240802120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-211.34</TRNAMT>
+                  <FITID>202408021211340</FITID>
+                  <CHECKNUM>000000080203</CHECKNUM>
+                  <REFNUM>80.203</REFNUM>
+                  <MEMO>Pix - Enviado - 02/08 10:11 LUCINEY DOS SANTOS OLIVEIR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240805120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-54.28</TRNAMT>
+                  <FITID>20240805154280</FITID>
+                  <CHECKNUM>000000129359</CHECKNUM>
+                  <REFNUM>129.359</REFNUM>
+                  <MEMO>Compra com Cartão - 04/08 08:09 OXXO GONCALO DA C</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240805120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-3.00</TRNAMT>
+                  <FITID>2024080513000</FITID>
+                  <CHECKNUM>000000233555</CHECKNUM>
+                  <REFNUM>233.555</REFNUM>
+                  <MEMO>Compra com Cartão - 04/08 09:19 EMPORIO PASCOTO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240805120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1407.72</TRNAMT>
+                  <FITID>2024080511407720</FITID>
+                  <CHECKNUM>000000080501</CHECKNUM>
+                  <REFNUM>80.501</REFNUM>
+                  <MEMO>Pagamento de Boleto - INTERMEDICA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240806120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-76.00</TRNAMT>
+                  <FITID>20240806176000</FITID>
+                  <CHECKNUM>000000080601</CHECKNUM>
+                  <REFNUM>80.601</REFNUM>
+                  <MEMO>Pix - Enviado - 06/08 14:18 NIC BR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240807120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>4728.94</TRNAMT>
+                  <FITID>2024080704728940</FITID>
+                  <CHECKNUM>555420769301</CHECKNUM>
+                  <REFNUM>230.555.420.769.301</REFNUM>
+                  <MEMO>Pix - Recebido - 07/08 15:32 55553982000130 ZALEM BUILD</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240808120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>550.00</TRNAMT>
+                  <FITID>202408080550000</FITID>
+                  <CHECKNUM>554062576572</CHECKNUM>
+                  <REFNUM>81.554.062.576.572</REFNUM>
+                  <MEMO>Pix - Recebido - 08/08 15:54 00027925741864 DENISE REGI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240809120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>1500.00</TRNAMT>
+                  <FITID>2024080901500000</FITID>
+                  <CHECKNUM>671887151453</CHECKNUM>
+                  <REFNUM>569.671.887.151.453</REFNUM>
+                  <MEMO>Dep dinheiro ATM - 09/08 15:14 SOP-PRACA DA ARVORE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240809120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1500.00</TRNAMT>
+                  <FITID>2024080911500000</FITID>
+                  <CHECKNUM>000000080901</CHECKNUM>
+                  <REFNUM>80.901</REFNUM>
+                  <MEMO>Pix - Enviado - 09/08 17:47 JOAO PEDRO BRAGA LUZ</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240809120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20240809130000</FITID>
+                  <CHECKNUM>000000080902</CHECKNUM>
+                  <REFNUM>80.902</REFNUM>
+                  <MEMO>Pix - Enviado - 09/08 18:47 Ahiane Luz da Silva Fernan</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-54.50</TRNAMT>
+                  <FITID>20240812154500</FITID>
+                  <CHECKNUM>000000165093</CHECKNUM>
+                  <REFNUM>165.093</REFNUM>
+                  <MEMO>Compra com Cartão - 10/08 18:04 SWIFT NOVA GRANAD</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.98</TRNAMT>
+                  <FITID>20240812110980</FITID>
+                  <CHECKNUM>000000283354</CHECKNUM>
+                  <REFNUM>283.354</REFNUM>
+                  <MEMO>Compra com Cartão - 11/08 23:09 VEND PERTO MACHINES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-193.33</TRNAMT>
+                  <FITID>202408121193330</FITID>
+                  <CHECKNUM>000000081201</CHECKNUM>
+                  <REFNUM>81.201</REFNUM>
+                  <MEMO>Pagamento de Boleto - BANCO CSF</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-144.23</TRNAMT>
+                  <FITID>202408121144230</FITID>
+                  <CHECKNUM>000000081202</CHECKNUM>
+                  <REFNUM>81.202</REFNUM>
+                  <MEMO>Pagamento conta luz - ELETROPAULO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8097.90</TRNAMT>
+                  <FITID>2024081218097900</FITID>
+                  <CHECKNUM>000136608649</CHECKNUM>
+                  <REFNUM>136.608.649</REFNUM>
+                  <MEMO>Pagto cartão crédito - OUROCARD FACIL VISA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.55</TRNAMT>
+                  <FITID>20240812114550</FITID>
+                  <CHECKNUM>251101768646</CHECKNUM>
+                  <REFNUM>872.251.101.768.646</REFNUM>
+                  <MEMO>Tarifa Pacote de Serviços - Cobrança referente 12/08/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240812120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-330.00</TRNAMT>
+                  <FITID>202408121330000</FITID>
+                  <CHECKNUM>000000040924</CHECKNUM>
+                  <REFNUM>40.924</REFNUM>
+                  <MEMO>Vivo Celular - VIVO MOVEL - SP</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240813120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>6604.00</TRNAMT>
+                  <FITID>2024081306604000</FITID>
+                  <CHECKNUM>653203388592</CHECKNUM>
+                  <REFNUM>131.653.203.388.592</REFNUM>
+                  <MEMO>Pix - Recebido - 13/08 16:53 55553982000130 ZALEM BUILD</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240813120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>2900.00</TRNAMT>
+                  <FITID>2024081302900000</FITID>
+                  <CHECKNUM>740737359781</CHECKNUM>
+                  <REFNUM>235.740.737.359.781</REFNUM>
+                  <MEMO>Pix - Recebido - 13/08 15:34 38214191807 BRUNA MARIA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240813120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-26.78</TRNAMT>
+                  <FITID>20240813126780</FITID>
+                  <CHECKNUM>000000161649</CHECKNUM>
+                  <REFNUM>161.649</REFNUM>
+                  <MEMO>Compra com Cartão - 13/08 17:07 SUPERMERCADO TROPICA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240814120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-25.11</TRNAMT>
+                  <FITID>20240814125110</FITID>
+                  <CHECKNUM>000000170570</CHECKNUM>
+                  <REFNUM>170.570</REFNUM>
+                  <MEMO>Compra com Cartão - 14/08 19:36 DELICIAS DO MOINHO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240815120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-42.48</TRNAMT>
+                  <FITID>20240815142480</FITID>
+                  <CHECKNUM>000000157074</CHECKNUM>
+                  <REFNUM>157.074</REFNUM>
+                  <MEMO>Compra com Cartão - 15/08 15:51 SUPER MERCADO SOROCA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240815120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-300.00</TRNAMT>
+                  <FITID>202408151300000</FITID>
+                  <CHECKNUM>000000081501</CHECKNUM>
+                  <REFNUM>81.501</REFNUM>
+                  <MEMO>Pix - Agendamento - 15/08 06:03 CLEIDE MARQUES OTAVIANO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240815120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-3110.65</TRNAMT>
+                  <FITID>2024081513110650</FITID>
+                  <CHECKNUM>000000081502</CHECKNUM>
+                  <REFNUM>81.502</REFNUM>
+                  <MEMO>Pagamento de Boleto - NU PAGAMENTOS SA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240815120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-26.54</TRNAMT>
+                  <FITID>20240815126540</FITID>
+                  <CHECKNUM>000000081503</CHECKNUM>
+                  <REFNUM>81.503</REFNUM>
+                  <MEMO>Pagamento de Boleto - TOKIO MARINE SEGURADORA S A</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240815120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1000.00</TRNAMT>
+                  <FITID>2024081511000000</FITID>
+                  <CHECKNUM>000000081504</CHECKNUM>
+                  <REFNUM>81.504</REFNUM>
+                  <MEMO>Pix - Enviado - 15/08 19:15 MARIA LUCIA RAMOS SIQUEIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240815120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-380.80</TRNAMT>
+                  <FITID>202408151380800</FITID>
+                  <CHECKNUM>000000011806</CHECKNUM>
+                  <REFNUM>11.806</REFNUM>
+                  <MEMO>Pagamento Pedágio - SEM PARAR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240816120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-21.01</TRNAMT>
+                  <FITID>20240816121010</FITID>
+                  <CHECKNUM>000000172301</CHECKNUM>
+                  <REFNUM>172.301</REFNUM>
+                  <MEMO>Compra com Cartão - 16/08 20:05 HORTISABOR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240816120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-144.06</TRNAMT>
+                  <FITID>202408161144060</FITID>
+                  <CHECKNUM>000000081601</CHECKNUM>
+                  <REFNUM>81.601</REFNUM>
+                  <MEMO>Pagamento de Boleto - ELETROPAULO METROPOLITANA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240819120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-28.00</TRNAMT>
+                  <FITID>20240819128000</FITID>
+                  <CHECKNUM>000000178018</CHECKNUM>
+                  <REFNUM>178.018</REFNUM>
+                  <MEMO>Compra com Cartão - 19/08 21:40 PASTEL DA CAMILLA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240819120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-114.90</TRNAMT>
+                  <FITID>202408191114900</FITID>
+                  <CHECKNUM>000000081901</CHECKNUM>
+                  <REFNUM>81.901</REFNUM>
+                  <MEMO>Pagamento de Boleto - BANCO BRADESCARD S A</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240820120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.76</TRNAMT>
+                  <FITID>2024082012760</FITID>
+                  <CHECKNUM>000000159740</CHECKNUM>
+                  <REFNUM>159.740</REFNUM>
+                  <MEMO>Compra com Cartão - 20/08 16:35 PadariaE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240820120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-439.80</TRNAMT>
+                  <FITID>202408201439800</FITID>
+                  <CHECKNUM>000000042079</CHECKNUM>
+                  <REFNUM>42.079</REFNUM>
+                  <MEMO>Pagto Tributo Municipal - PREF MUN OSASCO DBT</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240821120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-25.00</TRNAMT>
+                  <FITID>20240821125000</FITID>
+                  <CHECKNUM>000000142792</CHECKNUM>
+                  <REFNUM>142.792</REFNUM>
+                  <MEMO>Compra com Cartão - 21/08 11:53 MANJERICAO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240821120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.20</TRNAMT>
+                  <FITID>20240821110200</FITID>
+                  <CHECKNUM>000000260109</CHECKNUM>
+                  <REFNUM>260.109</REFNUM>
+                  <MEMO>Compra com Cartão - 21/08 16:41 PadariaE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240821120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-567.20</TRNAMT>
+                  <FITID>202408211567200</FITID>
+                  <CHECKNUM>000000082101</CHECKNUM>
+                  <REFNUM>82.101</REFNUM>
+                  <MEMO>Pagamento de Boleto - SUPERMERCADOS IRMAOS LOPES S/A</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240821120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-257.58</TRNAMT>
+                  <FITID>202408211257580</FITID>
+                  <CHECKNUM>000000043956</CHECKNUM>
+                  <REFNUM>43.956</REFNUM>
+                  <MEMO>Pagamento Fatura de Água - SABESP</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240823120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>2000.00</TRNAMT>
+                  <FITID>2024082302000000</FITID>
+                  <CHECKNUM>113589535952</CHECKNUM>
+                  <REFNUM>231.113.589.535.952</REFNUM>
+                  <MEMO>Pix - Recebido - 23/08 11:13 55553982000130 ZALEM BUILD</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240823120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>2500.00</TRNAMT>
+                  <FITID>2024082302500000</FITID>
+                  <CHECKNUM>345180264972</CHECKNUM>
+                  <REFNUM>231.345.180.264.972</REFNUM>
+                  <MEMO>Pix - Recebido - 23/08 13:45 55553982000130 ZALEM BUILD</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240823120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-37.25</TRNAMT>
+                  <FITID>20240823137250</FITID>
+                  <CHECKNUM>000000150380</CHECKNUM>
+                  <REFNUM>150.380</REFNUM>
+                  <MEMO>Compra com Cartão - 23/08 13:59 1 TABELIAO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240823120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2000.00</TRNAMT>
+                  <FITID>2024082312000000</FITID>
+                  <CHECKNUM>000000082301</CHECKNUM>
+                  <REFNUM>82.301</REFNUM>
+                  <MEMO>Pagamento de Impostos - STN - GRU JUDICIAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-35.47</TRNAMT>
+                  <FITID>20240826135470</FITID>
+                  <CHECKNUM>000000131657</CHECKNUM>
+                  <REFNUM>131.657</REFNUM>
+                  <MEMO>Compra com Cartão - 24/08 08:47 OXXO GONCALO DA C</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.00</TRNAMT>
+                  <FITID>20240826114000</FITID>
+                  <CHECKNUM>000000140524</CHECKNUM>
+                  <REFNUM>140.524</REFNUM>
+                  <MEMO>Compra com Cartão - 25/08 11:15 MARINO M NETO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-68.99</TRNAMT>
+                  <FITID>20240826168990</FITID>
+                  <CHECKNUM>000000232235</CHECKNUM>
+                  <REFNUM>232.235</REFNUM>
+                  <MEMO>Compra com Cartão - 24/08 08:57 DROGARIA SAO PAULO S</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-94.80</TRNAMT>
+                  <FITID>20240826194800</FITID>
+                  <CHECKNUM>000000243325</CHECKNUM>
+                  <REFNUM>243.325</REFNUM>
+                  <MEMO>Compra com Cartão - 25/08 12:02 FernandaCampioto</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-12.10</TRNAMT>
+                  <FITID>20240826112100</FITID>
+                  <CHECKNUM>000000334793</CHECKNUM>
+                  <REFNUM>334.793</REFNUM>
+                  <MEMO>Compra com Cartão - 25/08 09:39 OXXO GONCALO DA C</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-176.33</TRNAMT>
+                  <FITID>202408261176330</FITID>
+                  <CHECKNUM>000000358969</CHECKNUM>
+                  <REFNUM>358.969</REFNUM>
+                  <MEMO>Compra com Cartão - 26/08 16:22 NOVA GRANADA LTDA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-34.91</TRNAMT>
+                  <FITID>20240826134910</FITID>
+                  <CHECKNUM>000000639098</CHECKNUM>
+                  <REFNUM>639.098</REFNUM>
+                  <MEMO>Compra com Cartão - 25/08 10:51 MP*LATICINIOSSAT</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-6.50</TRNAMT>
+                  <FITID>2024082616500</FITID>
+                  <CHECKNUM>000000662030</CHECKNUM>
+                  <REFNUM>662.030</REFNUM>
+                  <MEMO>Compra com Cartão - 26/08 17:13 SUPERFRANCO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-43.80</TRNAMT>
+                  <FITID>20240826143800</FITID>
+                  <CHECKNUM>000000739256</CHECKNUM>
+                  <REFNUM>739.256</REFNUM>
+                  <MEMO>Compra com Cartão - 25/08 10:54 MP*VERDURAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-53.56</TRNAMT>
+                  <FITID>20240826153560</FITID>
+                  <CHECKNUM>000000762722</CHECKNUM>
+                  <REFNUM>762.722</REFNUM>
+                  <MEMO>Compra com Cartão - 26/08 17:25 SUPER MERCADO SOROCA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-166.85</TRNAMT>
+                  <FITID>202408261166850</FITID>
+                  <CHECKNUM>000000840433</CHECKNUM>
+                  <REFNUM>840.433</REFNUM>
+                  <MEMO>Compra com Cartão - 25/08 11:13 SACOLAO CENTRAL DE O</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-406.89</TRNAMT>
+                  <FITID>202408261406890</FITID>
+                  <CHECKNUM>000000082601</CHECKNUM>
+                  <REFNUM>82.601</REFNUM>
+                  <MEMO>Pagamento de Boleto - PEFISA S.A-CFI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240826120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2024082615000</FITID>
+                  <CHECKNUM>000996947374</CHECKNUM>
+                  <REFNUM>996.947.374</REFNUM>
+                  <MEMO>Tarifa MSG - Mês Anterior - Cobrança referente 12/08/2024</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240827120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.81</TRNAMT>
+                  <FITID>20240827120810</FITID>
+                  <CHECKNUM>000000150685</CHECKNUM>
+                  <REFNUM>150.685</REFNUM>
+                  <MEMO>Compra com Cartão - 27/08 14:04 1 TABELIAO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240827120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-31.80</TRNAMT>
+                  <FITID>20240827131800</FITID>
+                  <CHECKNUM>000000251402</CHECKNUM>
+                  <REFNUM>251.402</REFNUM>
+                  <MEMO>Compra com Cartão - 27/08 14:16 ALPHA SHOPPING</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240827120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20240827130000</FITID>
+                  <CHECKNUM>000000374008</CHECKNUM>
+                  <REFNUM>374.008</REFNUM>
+                  <MEMO>Compra com Cartão - 27/08 20:33 PastelDaCamillaIi</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240827120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-390.00</TRNAMT>
+                  <FITID>202408271390000</FITID>
+                  <CHECKNUM>000000082701</CHECKNUM>
+                  <REFNUM>82.701</REFNUM>
+                  <MEMO>Pix - Enviado - 27/08 15:25 ESPAVO COMUNICACOES E EVEN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240827120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-50.07</TRNAMT>
+                  <FITID>20240827150070</FITID>
+                  <CHECKNUM>000000044561</CHECKNUM>
+                  <REFNUM>44.561</REFNUM>
+                  <MEMO>Pagamento Fatura de Gás - COMGAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240828120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.00</TRNAMT>
+                  <FITID>20240828120000</FITID>
+                  <CHECKNUM>000000150995</CHECKNUM>
+                  <REFNUM>150.995</REFNUM>
+                  <MEMO>Compra com Cartão - 28/08 14:09 Q LIU PRESENTES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240828120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-18.00</TRNAMT>
+                  <FITID>20240828118000</FITID>
+                  <CHECKNUM>000000251642</CHECKNUM>
+                  <REFNUM>251.642</REFNUM>
+                  <MEMO>Compra com Cartão - 28/08 14:20 EXTRA OSASCO PRIMITI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240828120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.50</TRNAMT>
+                  <FITID>20240828115500</FITID>
+                  <CHECKNUM>000000356596</CHECKNUM>
+                  <REFNUM>356.596</REFNUM>
+                  <MEMO>Compra com Cartão - 28/08 15:43 SHOPPING UNIAO DE OS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240829120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-36.06</TRNAMT>
+                  <FITID>20240829136060</FITID>
+                  <CHECKNUM>000000174874</CHECKNUM>
+                  <REFNUM>174.874</REFNUM>
+                  <MEMO>Compra com Cartão - 29/08 20:47 DROGARIA SAO PAULO S</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240829120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-450.00</TRNAMT>
+                  <FITID>202408291450000</FITID>
+                  <CHECKNUM>000000082901</CHECKNUM>
+                  <REFNUM>82.901</REFNUM>
+                  <MEMO>Pix - Enviado - 29/08 16:16 REINAN DUARTE FERREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240829120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>202408291100000</FITID>
+                  <CHECKNUM>000000082902</CHECKNUM>
+                  <REFNUM>82.902</REFNUM>
+                  <MEMO>Pix - Enviado - 29/08 18:35 SANDRO ANTONIO DA SILVA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240830120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-49.90</TRNAMT>
+                  <FITID>20240830149900</FITID>
+                  <CHECKNUM>000000165518</CHECKNUM>
+                  <REFNUM>165.518</REFNUM>
+                  <MEMO>Compra com Cartão - 30/08 18:11 NATURA PAY*ATN - Afr</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20240830120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-349.95</TRNAMT>
+                  <FITID>202408301349950</FITID>
+                  <CHECKNUM>000000010243</CHECKNUM>
+                  <REFNUM>10.243</REFNUM>
+                  <MEMO>Pagto Energia Elétrica - ELETROPAULO METROPOLITANA</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>6488.53</BALAMT>
+               <DTASOF>20240831120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>
