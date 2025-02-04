@@ -55,11 +55,17 @@ st.markdown("""
         margin: 1rem 0;
     }
     /* Alinhamento das colunas de valor */
-    [data-testid="stDataFrame"] div[data-testid="StyledDataFrameDataCell"]:nth-child(3) {
-        text-align: right !important;
+    div[data-testid="StyledDataFrameDataCell"]:has(div > div > div > span:contains("R$")) {
+        display: flex !important;
+        justify-content: flex-end !important;
     }
-    [data-testid="stDataFrame"] div[data-testid="StyledDataFrameDataCell"]:nth-child(2) {
-        text-align: right !important;
+    div[data-testid="StyledDataFrameDataCell"] > div {
+        width: 100% !important;
+    }
+    div[data-testid="StyledDataFrameDataCell"] div:has(> div > div > span:contains("R$")) {
+        display: flex !important;
+        justify-content: flex-end !important;
+        width: 100% !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -76,7 +82,8 @@ except:
 def formatar_valor(valor):
     """Formata o valor para o padrão brasileiro"""
     try:
-        return f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+        # Garante que o valor tenha sempre 2 casas decimais
+        return f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     except:
         return valor
 
@@ -128,21 +135,28 @@ def load_categories():
         st.error(f" Erro ao carregar categorias: {str(e)}")
         return {}
 
-def read_ofx_files(directory):
+def read_ofx_files(uploaded_files):
+    """Processa múltiplos arquivos OFX enviados via upload"""
     transactions = []
-    for filename in os.listdir(directory):
-        if filename.endswith('.ofx'):
-            with open(os.path.join(directory, filename), 'rb') as fileobj:
-                try:
-                    ofx = OfxParser.parse(fileobj)
-                    for transaction in ofx.account.statement.transactions:
-                        transactions.append({
-                            'Data': transaction.date.strftime('%d/%m/%y'),
-                            'Historico': transaction.memo,
-                            'Valor': transaction.amount
-                        })
-                except Exception as e:
-                    st.error(f" Erro ao processar arquivo {filename}: {str(e)}")
+    for uploaded_file in uploaded_files:
+        try:
+            # Ler o conteúdo do arquivo enviado
+            content = uploaded_file.read()
+            
+            # Parse do arquivo OFX
+            ofx = OfxParser.parse(BytesIO(content))
+            
+            # Extrair transações
+            for transaction in ofx.account.statement.transactions:
+                transactions.append({
+                    'Data': transaction.date.strftime('%d/%m/%y'),
+                    'Historico': transaction.memo,
+                    'Valor': transaction.amount
+                })
+                
+        except Exception as e:
+            st.error(f" Erro ao processar arquivo {uploaded_file.name}: {str(e)}")
+    
     return pd.DataFrame(transactions)
 
 # Inicializar o modelo de embeddings globalmente
@@ -452,6 +466,33 @@ def filter_transactions(df, search_text, valor_pesquisa=None):
     
     return df_filtrado
 
+def generate_sql_commands(df):
+    """Gera comandos SQL para criar tabela e inserir dados"""
+    # Comando para criar a tabela
+    create_table = """
+CREATE TABLE IF NOT EXISTS transacoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE,
+    historico VARCHAR(255),
+    valor DECIMAL(10,2),
+    categoria VARCHAR(100),
+    operacao VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+"""
+    
+    # Gerar comandos INSERT
+    insert_commands = []
+    for _, row in df.iterrows():
+        historico = row['Historico'].replace("'", "''")  # Escapar aspas simples
+        insert = f"""INSERT INTO transacoes (data, historico, valor, categoria, operacao)
+VALUES ('{row['Data'].strftime('%Y-%m-%d')}', '{historico}', {row['Valor']}, '{row['Categoria']}', '{row['Operação']}');"""
+        insert_commands.append(insert)
+    
+    # Combinar todos os comandos
+    all_commands = create_table + "\n" + "\n".join(insert_commands)
+    return all_commands
+
 def main():
     # Área de configuração no sidebar
     with st.sidebar:
@@ -516,21 +557,8 @@ def main():
             for cat, palavras in st.session_state.categorias.items():
                 if cat != 'Outros':
                     with st.expander(f" {cat}"):
-                        st.text_input('Palavras-chave:', value=palavras, key=f'cat_{cat}')
+                        st.text_input('Palavras-chave:', value=palavras, key=f'cat_{cat}', disabled=True)
             
-            # Adicionar categoria
-            st.divider()
-            st.subheader(" Nova Categoria")
-            nova_cat = st.text_input('Nome:').strip()
-            novas_pal = st.text_area('Palavras-chave:').strip()
-            
-            if st.button('Adicionar', type='primary'):
-                if nova_cat and novas_pal:
-                    st.session_state.categorias[nova_cat] = novas_pal
-                    st.success(f' Categoria "{nova_cat}" adicionada!')
-                    st.rerun()
-                else:
-                    st.warning(' Preencha todos os campos!')
     # Conteúdo principal
     st.title(" Dashboard Financeiro")
     
@@ -538,55 +566,56 @@ def main():
         <div style='background-color: #f0f2f6; padding: 1rem; border-radius: 0.5rem; margin-bottom: 2rem;'>
             <h4></h4>
             <p>1. Certifique-se que o arquivo de categorias (categorias.xlsx) está configurado</p>
-            <p>2. Digite o caminho da pasta que contém os arquivos OFX</p>
+            <p>2. Faça upload dos arquivos OFX que deseja processar</p>
             <p>3. Clique em "Processar Arquivos" para visualizar o dashboard</p>
         </div>
     """, unsafe_allow_html=True)
     
-    # Input para o diretório dos arquivos OFX
-    col1, col2 = st.columns([3, 1])
-    with col1:
-        directory = st.text_input(' Caminho da pasta com os arquivos OFX:', 'd:\FluxoCaixa', label_visibility="visible")
-    with col2:
-        process_button = st.button(' Processar Arquivos', use_container_width=True, type='primary')
+    # Upload de múltiplos arquivos OFX
+    uploaded_files = st.file_uploader(" Selecione os arquivos OFX:", 
+                                    type=['ofx'], 
+                                    accept_multiple_files=True,
+                                    help="Você pode selecionar múltiplos arquivos OFX para processamento")
     
-    if process_button:
-        if os.path.exists(directory):
-            try:
-                with st.spinner(''):
-                    # Ler os arquivos OFX
-                    df = read_ofx_files(directory)
+    process_button = st.button(' Processar Arquivos', use_container_width=True, type='primary')
+    
+    if process_button and uploaded_files:
+        try:
+            with st.spinner('Processando arquivos...'):
+                # Ler os arquivos OFX
+                df = read_ofx_files(uploaded_files)
+            
+            if len(df) > 0:
+                # Converter data para datetime
+                df['Data'] = pd.to_datetime(df['Data'], format='%d/%m/%y')
                 
-                if len(df) > 0:
-                    # Converter data para datetime
-                    df['Data'] = pd.to_datetime(df['Data'], format='%d/%m/%y')
-                    
-                    # Categorizar transações
-                    if st.session_state.categorias:
-                        df['Categoria'] = df['Historico'].apply(
-                            lambda x: categorize_transaction(x, st.session_state.categorias)
-                        )
-                    else:
-                        df['Categoria'] = 'Outros'
-                    
-                    # Adicionar coluna de operação
-                    df['Operação'] = df['Valor'].apply(lambda x: 'Receita' if x > 0 else 'Despesa')
-                    
-                    # Adicionar colunas de data para filtro
-                    df['Ano'] = df['Data'].dt.year
-                    df['Mês'] = df['Data'].dt.month
-                    
-                    # Guardar o DataFrame no session_state
-                    st.session_state.df = df
-                    
-                    st.success('')
+                # Categorizar transações
+                if st.session_state.categorias:
+                    df['Categoria'] = df['Historico'].apply(
+                        lambda x: categorize_transaction(x, st.session_state.categorias)
+                    )
                 else:
-                    st.warning('')
-            except Exception as e:
-                st.error(f'')
-        else:
-            st.error('')
-            return
+                    df['Categoria'] = 'Outros'
+                
+                # Adicionar coluna de operação
+                df['Operação'] = df['Valor'].apply(lambda x: 'Receita' if x > 0 else 'Despesa')
+                
+                # Adicionar colunas de data para filtro
+                df['Ano'] = df['Data'].dt.year
+                df['Mês'] = df['Data'].dt.month
+                
+                # Guardar o DataFrame no session_state
+                st.session_state.df = df
+                
+                st.success(f'Processados {len(df)} registros com sucesso!')
+            else:
+                st.warning('Nenhuma transação encontrada nos arquivos.')
+        except Exception as e:
+            st.error(f'Erro ao processar arquivos: {str(e)}')
+            if st.session_state.get('debug_mode', False):
+                st.exception(e)
+    elif process_button and not uploaded_files:
+        st.warning('Por favor, selecione pelo menos um arquivo OFX para processar.')
     
     # Se temos dados para mostrar
     if st.session_state.df is not None:
@@ -776,12 +805,10 @@ def main():
             # Criar cópia formatada dos dados filtrados
             df_display_filtrado = filtered_df.copy()
             df_display_filtrado['Data'] = df_display_filtrado['Data'].dt.strftime('%d/%m/%y')
+            df_display_filtrado['Valor'] = df_display_filtrado['Valor'].apply(formatar_valor)
             
             # Remover colunas de filtro
             df_display_filtrado = df_display_filtrado.drop(['Ano', 'Mês'], axis=1)
-            
-            # Converter para string formatada antes de exibir
-            df_display_filtrado['Valor'] = df_display_filtrado['Valor'].apply(formatar_valor)
             
             st.dataframe(
                 df_display_filtrado,
@@ -857,6 +884,19 @@ def main():
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             use_container_width=True
         )
+        
+        # Botão para gerar SQL
+        if st.button(" Gerar SQL das Transações", type="primary"):
+            sql_commands = generate_sql_commands(df_filtrado)
+            
+            # Criar download do arquivo SQL
+            st.download_button(
+                label=" Download do arquivo SQL",
+                data=sql_commands,
+                file_name="transacoes.sql",
+                mime="text/plain",
+                help="Baixar arquivo SQL com comandos para criar tabela e inserir transações"
+            )
 
 if __name__ == "__main__":
     main()
